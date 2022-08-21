@@ -21,9 +21,8 @@ public class zadatak6 {
 		}
 	public static void stampanjeZvezdica(int n) {
 		
-		for(int i = 1; i <= n ; i++) {
 			System.out.print("* ");
-		}
+		
 		System.out.println();
 	}
 	

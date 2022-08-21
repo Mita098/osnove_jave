@@ -22,10 +22,15 @@ public class Zadatak4 {
 		plavi.marka = "Audi";
 		plavi.brVrata = 5;
 		plavi.potrosnja = 11;
-		plavi.brzina = 190;
+		plavi.brzina = 100;
 		plavi.godProizvodnje = 1930;
 		plavi.registracija = 1;
 		plavi.kubikaza = 5000;
+		plavi.brReg = "NI : 011 LS";
+		plavi.airOnOF = "on";
+		plavi.maxSpeed = 280;
+		plavi.rezervoarMax = 50;
+		plavi.rezervoarAtm = 23;
 		
 		plavi.stampa();
 		System.out.print("Unesite ogranicenje na ovo delu puta: ");
@@ -44,6 +49,17 @@ public class Zadatak4 {
 			System.out.println("Nije vam istekla registracija");
 		}
 		System.out.println("cena registracije za vase vozilo je " + plavi.cenaReg());
+		plavi.dodajGas();
+		System.out.println(plavi.brzina);
+		plavi.koci();
+		System.out.println(plavi.brzina);
+		plavi.potrosnjaa();
+		System.out.println(plavi.potrosnjaa());
+		plavi.stampajTablu();
+		System.out.print("Unesite kolkiko zelite goriva da sipate: ");
+		int tocenje = s.nextInt();
+		plavi.natociGorivo(tocenje);
+		System.out.println("Cena vaseg tocenja iznosi " + plavi.natociGorivo(tocenje) + "rsd");
 	}
 
 }
