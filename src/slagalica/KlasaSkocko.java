@@ -114,7 +114,7 @@ public class KlasaSkocko {
 		for(int i = 0; i < odigran.size(); i ++) {
 			int i1 = 0;
 			boolean petlja = false;
-			while(petlja == false ){
+			while(!petlja ){
 				if (i1 == polje.size()) {
 					i1 = 0 ;
 					petlja = true;
